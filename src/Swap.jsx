@@ -224,67 +224,77 @@ export default function Swap() {
 }
 
 const styles = {
-  wrapper: {
-    minHeight: "100vh",
-    background: "radial-gradient(circle at top, #1a1b1f, #0b0b0e)",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  card: {
-    background: "rgba(255,255,255,0.05)",
-    backdropFilter: "blur(20px)",
-    padding: 24,
-    borderRadius: 20,
-    width: 380,
-  },
-  title: {
-    color: "white",
-    marginBottom: 20,
-  },
-  box: {
-    background: "#2a2d35",
-    padding: 12,
-    borderRadius: 12,
-    marginBottom: 10,
-  },
-  label: {
-    color: "#aaa",
-    fontSize: 12,
-  },
-  row: {
-    display: "flex",
-    justifyContent: "space-between",
-  },
-  input: {
-    background: "transparent",
-    border: "none",
-    color: "white",
-    width: "60%",
-  },
-  arrow: {
-    textAlign: "center",
-    cursor: "pointer",
-    margin: 10,
-    color: "#aaa",
-  },
-  sub: {
-    color: "#888",
-    fontSize: 12,
-    marginTop: 4,
-  },
-  info: {
-    color: "#aaa",
-    fontSize: 12,
-    marginTop: 8,
-  },
-  button: {
-    width: "100%",
-    padding: 14,
-    borderRadius: 12,
-    background: "#6c5ce7",
-    color: "white",
-    border: "none",
-    marginTop: 10,
-  },
+    wrapper: {
+        minHeight: "100vh",
+        background: "radial-gradient(circle at top, #0a0b0f, #050506)", // gelap deep space
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    card: {
+        background: "rgba(20,22,28,0.9)", // gelap semi-transparent
+        backdropFilter: "blur(30px)",
+        padding: 24,
+        borderRadius: 20,
+        width: 380,
+        boxShadow: "0 0 20px rgba(0,255,200,0.2)", // glow neon
+    },
+    title: {
+        color: "#00fff7", // biru-toska neon
+        marginBottom: 20,
+        fontWeight: 600,
+        fontSize: 22,
+    },
+    box: {
+        background: "#12141b", // gelap kontras
+        padding: 12,
+        borderRadius: 12,
+        marginBottom: 10,
+        border: "1px solid #00fff7", // outline neon
+    },
+    label: {
+        color: "#7f8c9a", // abu neon soft
+        fontSize: 12,
+    },
+    row: {
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+    },
+    input: {
+        background: "transparent",
+        border: "none",
+        color: "white",
+        width: "60%",
+        fontWeight: 500,
+    },
+    arrow: {
+        textAlign: "center",
+        cursor: "pointer",
+        margin: 10,
+        color: "#00fff7", // neon accent
+    },
+    sub: {
+        color: "#7f8c9a",
+        fontSize: 12,
+        marginTop: 4,
+    },
+    info: {
+        color: "#00fff7",
+        fontSize: 12,
+        marginTop: 8,
+    },
+    button: {
+        width: "100%",
+        padding: 14,
+        borderRadius: 12,
+        background: "linear-gradient(90deg, #6c5ce7, #00fff7)", // gradasi neon ungu-biru
+        color: "white",
+        border: "none",
+        marginTop: 10,
+        fontWeight: 600,
+        cursor: "pointer",
+        boxShadow: "0 4px 20px rgba(0,255,247,0.3)", // glow effect
+        transition: "0.3s ease",
+    },
 };
