@@ -1,7 +1,7 @@
 // src/App.jsx
 import React from "react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-import SwapCard from "./SwapCard";
+import SwapCard from "./Swap";
 import "@solana/wallet-adapter-react-ui/styles.css";
 
 export default function App() {
@@ -36,8 +36,8 @@ export default function App() {
         />
       </div>
 
-      {/* Swap card */}
-      <SwapCard />
+      {/* Swap */}
+      <Swap />
     </div>
   );
 }
