@@ -41,7 +41,7 @@ export default function App() {
 
   return (
     <div style={wrapperStyle}>
-      <h1 style={titleStyle}>🚀 Simple Jupiter DEX</h1>
+      <h1 style={titleStyle}>MiowSwap</h1>
 
       <WalletMultiButton style={walletButtonStyle} />
 
