@@ -1,7 +1,7 @@
 // src/App.jsx
 import React from "react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-import SwapCard from "./Swap";
+import Swap from "./Swap";
 import "@solana/wallet-adapter-react-ui/styles.css";
 
 export default function App() {
