@@ -1,3 +1,4 @@
+// src/Swap.jsx
 import React, { useState, useEffect } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { VersionedTransaction } from "@solana/web3.js";
@@ -223,38 +224,46 @@ export default function Swap() {
   );
 }
 
+// ✅ Responsive & dark theme styles
 const styles = {
     wrapper: {
         minHeight: "100vh",
-        background: "radial-gradient(circle at top, #0a0b0f, #050506)", // gelap deep space
+        background: "radial-gradient(circle at top, #0a0b0f, #050506)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        padding: "10px", // padding untuk mobile
+        boxSizing: "border-box",
     },
     card: {
-        background: "rgba(20,22,28,0.9)", // gelap semi-transparent
+        background: "rgba(20,22,28,0.9)",
         backdropFilter: "blur(30px)",
         padding: 24,
         borderRadius: 20,
-        width: 380,
-        boxShadow: "0 0 20px rgba(0,255,200,0.2)", // glow neon
+        width: "100%",    // responsive
+        maxWidth: 380,    // max width di desktop
+        boxShadow: "0 0 20px rgba(0,255,200,0.2)",
+        boxSizing: "border-box",
     },
     title: {
-        color: "#00fff7", // biru-toska neon
+        color: "#00fff7",
         marginBottom: 20,
         fontWeight: 600,
         fontSize: 22,
+        textAlign: "center",
     },
     box: {
-        background: "#12141b", // gelap kontras
+        background: "#12141b",
         padding: 12,
         borderRadius: 12,
         marginBottom: 10,
-        border: "1px solid #00fff7", // outline neon
+        border: "1px solid #00fff7",
     },
     label: {
-        color: "#7f8c9a", // abu neon soft
+        color: "#7f8c9a",
         fontSize: 12,
+        marginBottom: 4,
+        display: "block",
     },
     row: {
         display: "flex",
@@ -267,12 +276,13 @@ const styles = {
         color: "white",
         width: "60%",
         fontWeight: 500,
+        fontSize: 16,
     },
     arrow: {
         textAlign: "center",
         cursor: "pointer",
         margin: 10,
-        color: "#00fff7", // neon accent
+        color: "#00fff7",
     },
     sub: {
         color: "#7f8c9a",
@@ -288,13 +298,13 @@ const styles = {
         width: "100%",
         padding: 14,
         borderRadius: 12,
-        background: "linear-gradient(90deg, #6c5ce7, #00fff7)", // gradasi neon ungu-biru
+        background: "linear-gradient(90deg, #6c5ce7, #00fff7)",
         color: "white",
         border: "none",
         marginTop: 10,
         fontWeight: 600,
         cursor: "pointer",
-        boxShadow: "0 4px 20px rgba(0,255,247,0.3)", // glow effect
+        boxShadow: "0 4px 20px rgba(0,255,247,0.3)",
         transition: "0.3s ease",
     },
 };
