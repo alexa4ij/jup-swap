@@ -18,7 +18,7 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <h1 style={{ color: "#00fff7", marginBottom: 20 }}>🚀 Simple Jupiter DEX</h1>
+      <h1 style={{ color: "#00fff7", marginBottom: 20 }}>🚀 MIOW SWAP</h1>
 
       {/* Wallet connect button */}
       <div style={{ marginBottom: 30 }}>
