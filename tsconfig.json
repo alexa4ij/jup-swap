@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                       // versi JS output
+    "module": "ESNext",                       // module system
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // library yang digunakan
+    "allowJs": true,                           // biar bisa pakai .js
+    "jsx": "react-jsx",                        // untuk JSX React 17+
+    "moduleResolution": "Node",
+    "esModuleInterop": true,                   // untuk import CommonJS
+    "allowSyntheticDefaultImports": true,
+    "strict": false,                           // nonaktifkan strict sementara
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,                      // biar type dari node_modules tidak bikin error
+    "noEmit": false                            // biar bisa build JS
+  },
+  "include": ["src"],                          // folder project kamu
+  "exclude": ["node_modules", "dist"]          // exclude folder yang tidak perlu
+}
